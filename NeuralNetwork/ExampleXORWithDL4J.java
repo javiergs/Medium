@@ -11,7 +11,7 @@ import org.nd4j.linalg.factory.Nd4j;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.nd4j.evaluation.classification.Evaluation;
 
-public class ExampleDL4J {
+public class ExampleXORWithDL4J {
     
   public static void main(String[] args) throws Exception {
   
