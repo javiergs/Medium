@@ -41,7 +41,7 @@ public class ExampleMNISTWithDL4J {
     
     // Training
     for (int i = 0; i < 100; i++) {
-      System.out.println("> " + i);
+      System.out.print(".");
       model.fit(train);
     }
   
