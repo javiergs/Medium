@@ -11,14 +11,12 @@ import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.nd4j.evaluation.classification.Evaluation;
-
 import java.io.File;
 
 public class ExampleMNISTWithDL4J {
   
   public static void main(String[] args) throws Exception {
 
-    
     DataSetIterator train = new MnistDataSetIterator(100, 60000, true);
     DataSetIterator test = new MnistDataSetIterator(100, 10000, true);
   
@@ -41,6 +39,7 @@ public class ExampleMNISTWithDL4J {
     model.init();
     model.setLearningRate(0.7);
     
+    // Training
     for (int i = 0; i < 100; i++) {
       System.out.println("> " + i);
       model.fit(train);
