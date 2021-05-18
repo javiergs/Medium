@@ -32,7 +32,7 @@ public class Main extends JFrame implements ActionListener {
 		c.gridheight = 2;
 		JPanel drawPanel = new JPanel(new BorderLayout(1,1));
 		labeledImage = new LabeledImage();
-		drawArea = new DrawArea(labeledImage);
+		drawArea = new DrawArea();
 		drawPanel.setBorder(BorderFactory.createTitledBorder("Draw a digit in this space:"));
 		drawPanel.add(drawArea);
 		add(drawPanel, c);
