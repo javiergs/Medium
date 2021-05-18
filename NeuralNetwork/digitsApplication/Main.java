@@ -15,7 +15,7 @@ public class Main extends JFrame implements ActionListener {
 	private DrawArea drawArea;
 	private JLabel predictNumber;
 	private MultiLayerNetwork model;
-	private LabeledImage labeledImage;
+	private InputImage labeledImage;
 	
 	public Main() throws IOException {
 		createMenu();
@@ -31,7 +31,7 @@ public class Main extends JFrame implements ActionListener {
 		c.gridwidth = 1;
 		c.gridheight = 2;
 		JPanel drawPanel = new JPanel(new BorderLayout(1,1));
-		labeledImage = new LabeledImage();
+		labeledImage = new InputImage();
 		drawArea = new DrawArea();
 		drawPanel.setBorder(BorderFactory.createTitledBorder("Draw a digit in this space:"));
 		drawPanel.add(drawArea);
